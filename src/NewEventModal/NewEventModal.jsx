@@ -4,8 +4,12 @@ export const NewEventModal = ({ onSave, onClose }) => {
   const [title, setTitle] = useState('');
   const [error, setError] = useState(false);
 
+
+//To-Do : Couleur de l'évent
+//Change la couleur en fonction du choix dans le form
+//Probleme change pas la couleur et possible change la couleur de tous les events si on choisit une autre couleur
   return(
-    <>
+    <html>
       <div id="newEventModal">
         <h2>Nouvel Evenement</h2>
 
@@ -47,6 +51,6 @@ export const NewEventModal = ({ onSave, onClose }) => {
       </div>
 
       <div id="modalBackDrop"></div>
-    </>
+    </html>
   );
 };
